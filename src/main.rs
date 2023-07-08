@@ -71,6 +71,8 @@ fn animate(base_color: String, dest_color: String) {
             .as_hex()
             .display();
 
+        // bruh i didn't find a better way to do this
+        // this looks horrible af, but well, i kinda need help here ;-;
         if rgba_base.r < rgba_dest.r {
             rgba_base.r += 1;
         } else if rgba_base.r > rgba_dest.r {
